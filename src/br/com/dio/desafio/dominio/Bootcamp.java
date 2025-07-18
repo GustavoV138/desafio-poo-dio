@@ -51,11 +51,11 @@ public class Bootcamp {
     @Override
     public boolean equals(Object o) {
         if (!(o instanceof Bootcamp bootcamp)) return false;
-        return Objects.equals(devsInscritos, bootcamp.devsInscritos) && Objects.equals(conteudos, bootcamp.conteudos);
+        return Objects.equals(nome, bootcamp.nome) && Objects.equals(descricao, bootcamp.descricao) && Objects.equals(dataInicial, bootcamp.dataInicial) && Objects.equals(dataFinal, bootcamp.dataFinal) && Objects.equals(devsInscritos, bootcamp.devsInscritos) && Objects.equals(conteudos, bootcamp.conteudos);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(devsInscritos, conteudos);
+        return Objects.hash(nome, descricao, dataInicial, dataFinal, devsInscritos, conteudos);
     }
 }

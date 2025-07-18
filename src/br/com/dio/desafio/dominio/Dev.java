@@ -57,11 +57,11 @@ public class Dev {
     @Override
     public boolean equals(Object o) {
         if (!(o instanceof Dev dev)) return false;
-        return Objects.equals(conteudosInscritos, dev.conteudosInscritos) && Objects.equals(conteudosConcluidos, dev.conteudosConcluidos);
+        return Objects.equals(nome, dev.nome) && Objects.equals(conteudosInscritos, dev.conteudosInscritos) && Objects.equals(conteudosConcluidos, dev.conteudosConcluidos);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(conteudosInscritos, conteudosConcluidos);
+        return Objects.hash(nome, conteudosInscritos, conteudosConcluidos);
     }
 }
